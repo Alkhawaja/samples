@@ -28,7 +28,7 @@ hf-login:
 	huggingface-cli login --token $(HF) --add-to-git-credential
 
 push-hub: 
-	huggingface-cli upload Fareskh12/Classifiers ./Models /Model --repo-type=space --commit-message="Sync Model"
+	huggingface-cli upload Fareskh12/Classifiers ./Model /Model --repo-type=space --commit-message="Sync Model"
 
 deploy: hf-login push-hub
 
